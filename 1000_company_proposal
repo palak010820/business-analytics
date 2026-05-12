@@ -1,0 +1,18 @@
+To deliver 1,000 qualified leads in 30 days without quality loss, I would use an "AI-Orchestrated Assembly Line."
+
+A. Sourcing the Initial Universe:
+I will aim for a "Top-Down" universe of ~5,000 companies to yield 1,000 qualified "Federers" (20% yield).
+
+Primary Source: Capitaline/VCCEdge (paid databases) for financial filtering (50Cr-500Cr revenue + Manufacturing sector).
+
+Secondary Source: Scraped lists from Aatmanirbhar Bharat portals and industrial zone directories (MIDC, GIDC, SIPCOT).
+
+B. Automating Qualification (The "Federer Scraper"):
+I would build a Python-based workflow:
+Enrichment: Use Firecrawl or Apify to scrape the "About Us" and "Team" pages of the 5,000 companies.
+LLM Reasoning: Pipe the text into Claude 3.5 Sonnet (best for nuance) with a strict scoring prompt: "Extract the Founder's degree. Are they a PhD/Engineer? (C4). Does the text mention 'Proprietary,' 'In-house,' or 'Plant'? (C1/C3)."
+Revenue Validation: Use an API (like Tofler) to pull the latest FY revenue and ownership structure to ensure they aren't part of a conglomerate.
+
+C. Quality Control:
+The "Vimta Labs" Check: A secondary AI agent will be tasked solely with "Devil’s Advocacy"—it looks specifically for keywords like "Testing," "Consulting," or "Agency" to flag false-positive service providers.
+Borderline Cases: Any company with a Federer Score of 70-85 will be moved to a "Human-in-the-loop" queue for a 2-minute manual review of their product catalog.
